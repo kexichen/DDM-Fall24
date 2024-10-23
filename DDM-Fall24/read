@@ -1,0 +1,15 @@
+import pyreadstat
+import pandas as pd
+
+
+# Define the file path
+file_path = r"C:\Users\Kexi Chen\Downloads\STU_QQQ_SAS\CY08MSP_STU_QQQ.SAS7BDAT"
+
+# Read the SAS dataset
+df, meta = pyreadstat.read_sas7bdat(file_path)
+
+# Display the first few rows of the dataset
+print(df.head(10))
+
+# Optional: Print metadata information
+print(meta)
